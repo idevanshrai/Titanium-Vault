@@ -1,6 +1,16 @@
+import { useEffect } from 'react';
 import PasswordGenerator from './components/PasswordGenerator';
 
 function App() {
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      document.body.style.setProperty('--mouse-x', `${e.clientX}px`);
+      document.body.style.setProperty('--mouse-y', `${e.clientY}px`);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
   return (
     <>
       <div className="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] rounded-full bg-[#1e293b]/10 blur-[120px] pointer-events-none"></div>
