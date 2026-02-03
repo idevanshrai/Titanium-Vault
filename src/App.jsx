@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import PasswordGenerator from './components/PasswordGenerator';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   }, []);
   return (
     <>
+      <Analytics />
       <div className="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] rounded-full bg-[#1e293b]/10 blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-5%] w-[50%] h-[50%] rounded-full bg-[#0f172a]/20 blur-[100px] pointer-events-none"></div>
       <div className="absolute top-[20%] right-[10%] w-[300px] h-[300px] rounded-full bg-white/5 blur-[80px] pointer-events-none"></div>
