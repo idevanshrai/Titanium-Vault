@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Navy &amp; Silver Studio Glass</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#cbd5e1","background-dark": "#02040a","navy-deep": "#050b14",
+              "glass-border": "rgba(148, 163, 184, 0.1)","glass-surface": "rgba(10, 20, 35, 0.75)","matte-navy": "#0b121f","silver-glow": "rgba(203, 213, 225, 0.15)",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            boxShadow: {
+              "glass": "0 25px 50px -12px rgba(0, 0, 0, 0.7)",
+              "inset-screen": "inset 0 2px 10px rgba(0, 0, 0, 0.6)",
+              "glow": "0 0 15px rgba(203, 213, 225, 0.1)",
+            }
+          },
+        },
+      }
+    </script>
+<style>::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #02040a; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }input[type=range] { -webkit-appearance: none; background: transparent; }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px; width: 8px;
+            border-radius: 1px;
+            background: #e2e8f0;cursor: pointer;
+            margin-top: -8px;
+            box-shadow: 0 0 10px rgba(226, 232, 240, 0.3);
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%; height: 4px;
+            cursor: pointer;
+            background: #1e293b;border-radius: 2px;
+        }
+        input[type=range]:focus::-webkit-slider-runnable-track { background: #334155; }.bg-noise {
+            background-image: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.02), transparent 70%), 
+                              repeating-linear-gradient(transparent, transparent 2px, rgba(0,0,0,0.2) 2px, rgba(0,0,0,0.2) 4px);
+        }.switch-check:checked + div {
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(203, 213, 225, 0.4);color: white;
+        }
+        .switch-check:checked + div .indicator {
+            background-color: #e2e8f0;box-shadow: 0 0 8px rgba(226, 232, 240, 0.4);
+        }.radio-select:checked + div {
+            background-color: rgba(255, 255, 255, 0.03);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        .radio-select:checked + div .radio-dot {
+            opacity: 1; transform: scale(1);
+            background-color: #e2e8f0;
+            box-shadow: 0 0 8px rgba(226, 232, 240, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-400 antialiased min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-noise">
+<div class="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] rounded-full bg-[#1e293b]/10 blur-[120px] pointer-events-none"></div> 
+<div class="absolute bottom-[-10%] right-[-5%] w-[50%] h-[50%] rounded-full bg-[#0f172a]/20 blur-[100px] pointer-events-none"></div> 
+<div class="absolute top-[20%] right-[10%] w-[300px] h-[300px] rounded-full bg-white/5 blur-[80px] pointer-events-none"></div> 
+<main class="relative w-full max-w-[560px] bg-glass-surface backdrop-blur-[40px] border border-glass-border rounded-2xl shadow-glass overflow-hidden flex flex-col group/design-root">
+<div class="px-8 pt-8 pb-4 flex justify-between items-center border-b border-white/5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-300 text-[20px]">lock</span> 
+<h4 class="text-slate-500 text-xs font-bold leading-normal tracking-[0.2em]">TITANIUM KEY</h4> 
+</div>
+<div class="flex gap-2">
+<button class="flex items-center justify-center w-8 h-8 rounded-full hover:bg-white/5 transition-colors text-slate-500 hover:text-slate-200" title="History">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</div>
+<div class="p-8 flex flex-col gap-8">
+<div class="relative group">
+<div class="flex w-full items-stretch rounded-lg bg-matte-navy shadow-inset-screen border-b border-white/5 overflow-hidden ring-1 ring-white/5 transition-all group-hover:ring-white/10">
+<input class="flex w-full min-w-0 flex-1 resize-none bg-transparent border-none h-20 px-6 text-2xl md:text-3xl font-mono text-slate-200 placeholder:text-slate-700 focus:ring-0 focus:outline-none tracking-wider" readonly="" value="N@vy_Silv3r!"/>
+<div class="flex items-center pr-4 gap-1">
+<button class="text-slate-500 hover:text-slate-200 transition-colors p-2 rounded-md hover:bg-white/5 active:scale-95 flex items-center justify-center" title="Copy">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+<button class="text-slate-500 hover:text-slate-200 transition-colors p-2 rounded-md hover:bg-white/5 active:scale-95 flex items-center justify-center" title="Regenerate">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-[3px] bg-[#0f172a] flex gap-[1px]">
+<div class="h-full flex-1 bg-slate-600"></div>
+<div class="h-full flex-1 bg-slate-500"></div>
+<div class="h-full flex-1 bg-slate-400"></div>
+<div class="h-full flex-1 bg-slate-300 shadow-[0_-2px_6px_rgba(203,213,225,0.5)]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-end">
+<label class="text-slate-500 text-xs font-bold tracking-widest uppercase">Length</label>
+<span class="text-slate-200 font-mono text-lg font-medium">16</span>
+</div>
+<div class="relative h-6 flex items-center">
+<input class="w-full z-10 focus:outline-none" max="64" min="8" type="range" value="16"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8">
+<div class="flex flex-col gap-4">
+<label class="text-slate-500 text-xs font-bold tracking-widest uppercase mb-1">Character Sets</label>
+<div class="flex flex-col gap-3">
+<label class="cursor-pointer group">
+<input checked="" class="switch-check sr-only" type="checkbox"/>
+<div class="flex items-center justify-between p-3 rounded bg-white/[0.03] border border-transparent hover:border-white/10 transition-all duration-200">
+<span class="text-sm font-medium text-slate-400 group-hover:text-slate-200 transition-colors">Uppercase (A-Z)</span>
+<div class="indicator w-1.5 h-1.5 rounded-full bg-slate-700 transition-all duration-300"></div>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input checked="" class="switch-check sr-only" type="checkbox"/>
+<div class="flex items-center justify-between p-3 rounded bg-white/[0.03] border border-transparent hover:border-white/10 transition-all duration-200">
+<span class="text-sm font-medium text-slate-400 group-hover:text-slate-200 transition-colors">Lowercase (a-z)</span>
+<div class="indicator w-1.5 h-1.5 rounded-full bg-slate-700 transition-all duration-300"></div>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input checked="" class="switch-check sr-only" type="checkbox"/>
+<div class="flex items-center justify-between p-3 rounded bg-white/[0.03] border border-transparent hover:border-white/10 transition-all duration-200">
+<span class="text-sm font-medium text-slate-400 group-hover:text-slate-200 transition-colors">Numbers (0-9)</span>
+<div class="indicator w-1.5 h-1.5 rounded-full bg-slate-700 transition-all duration-300"></div>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input checked="" class="switch-check sr-only" type="checkbox"/>
+<div class="flex items-center justify-between p-3 rounded bg-white/[0.03] border border-transparent hover:border-white/10 transition-all duration-200">
+<span class="text-sm font-medium text-slate-400 group-hover:text-slate-200 transition-colors">Symbols (!@#)</span>
+<div class="indicator w-1.5 h-1.5 rounded-full bg-slate-700 transition-all duration-300"></div>
+</div>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<label class="text-slate-500 text-xs font-bold tracking-widest uppercase mb-1">Complexity</label>
+<div class="flex flex-col gap-3">
+<label class="cursor-pointer group">
+<input checked="" class="radio-select sr-only" name="complexity" type="radio"/>
+<div class="flex flex-row-reverse items-start gap-4 p-3 rounded border border-white/5 bg-transparent hover:bg-white/[0.03] transition-all duration-200 min-h-[80px]">
+<div class="w-4 h-4 rounded-full border border-slate-600 group-hover:border-slate-400 flex items-center justify-center mt-1 shrink-0 transition-colors">
+<div class="radio-dot w-2 h-2 rounded-full opacity-0 transform scale-0 transition-all duration-200"></div>
+</div>
+<div class="flex flex-col grow">
+<span class="text-sm font-medium text-slate-300 mb-1 group-hover:text-white transition-colors">Unique Characters</span>
+<span class="text-xs text-slate-500 leading-relaxed">Standard generation using all selected sets.</span>
+</div>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="radio-select sr-only" name="complexity" type="radio"/>
+<div class="flex flex-row-reverse items-start gap-4 p-3 rounded border border-white/5 bg-transparent hover:bg-white/[0.03] transition-all duration-200 min-h-[80px]">
+<div class="w-4 h-4 rounded-full border border-slate-600 group-hover:border-slate-400 flex items-center justify-center mt-1 shrink-0 transition-colors">
+<div class="radio-dot w-2 h-2 rounded-full opacity-0 transform scale-0 transition-all duration-200"></div>
+</div>
+<div class="flex flex-col grow">
+<span class="text-sm font-medium text-slate-300 mb-1 group-hover:text-white transition-colors">Easy to Read</span>
+<span class="text-xs text-slate-500 leading-relaxed">Avoid ambiguous characters like 1, l, I, 0, O.</span>
+</div>
+</div>
+</label>
+<label class="cursor-pointer group">
+<input class="radio-select sr-only" name="complexity" type="radio"/>
+<div class="flex flex-row-reverse items-start gap-4 p-3 rounded border border-white/5 bg-transparent hover:bg-white/[0.03] transition-all duration-200 min-h-[80px]">
+<div class="w-4 h-4 rounded-full border border-slate-600 group-hover:border-slate-400 flex items-center justify-center mt-1 shrink-0 transition-colors">
+<div class="radio-dot w-2 h-2 rounded-full opacity-0 transform scale-0 transition-all duration-200"></div>
+</div>
+<div class="flex flex-col grow">
+<span class="text-sm font-medium text-slate-300 mb-1 group-hover:text-white transition-colors">Easy to Say</span>
+<span class="text-xs text-slate-500 leading-relaxed">Avoid numbers and symbols completely.</span>
+</div>
+</div>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-8 pt-0 mt-2">
+<button class="w-full relative group overflow-hidden rounded-lg bg-gradient-to-b from-white/10 to-white/5 p-[1px] shadow-lg active:shadow-none active:scale-[0.99] transition-all duration-150">
+<div class="relative h-14 bg-[#111827] group-hover:bg-[#1f2937] rounded-[7px] flex items-center justify-center transition-colors">
+<span class="text-slate-300 group-hover:text-white text-sm font-bold tracking-[0.15em] uppercase transition-colors">Generate New Key</span>
+<div class="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+</button>
+</div>
+</main>
+<div class="absolute bottom-8 text-slate-600 text-[10px] tracking-widest font-mono uppercase opacity-50">
+    Titanium Vault • v2.0.4
+</div>
+
+</body></html>
